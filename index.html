@@ -38,6 +38,80 @@
             color: #2c3e50;
             margin-bottom: 10px;
         }
+
+        /* ===== MUSCLE MAN NEELY MAN TRIBUTE ===== */
+        @keyframes rainbow-flex {
+            0%   { background-position: 0% 50%; }
+            50%  { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        @keyframes mega-pump {
+            0%, 100% { transform: scale(1) rotate(-1deg); }
+            25%      { transform: scale(1.06) rotate(1deg); }
+            50%      { transform: scale(1.12) rotate(-2deg); }
+            75%      { transform: scale(1.06) rotate(2deg); }
+        }
+        @keyframes shimmy {
+            0%, 100% { transform: translateX(0); }
+            25%      { transform: translateX(-6px); }
+            75%      { transform: translateX(6px); }
+        }
+        .muscle-tribute {
+            margin: 50px 0;
+            padding: 30px;
+            border: 6px dashed #ff00aa;
+            border-radius: 16px;
+            background: linear-gradient(
+                270deg,
+                #ff004c, #ff8a00, #ffe600,
+                #14ff00, #00e1ff, #6a00ff, #ff00aa
+            );
+            background-size: 1400% 1400%;
+            animation: rainbow-flex 8s ease infinite;
+            color: #fff;
+            text-align: center;
+            text-shadow: 2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000;
+            box-shadow: 0 0 40px rgba(255, 0, 170, 0.7), 0 0 80px rgba(0, 225, 255, 0.5);
+            font-family: 'Impact', 'Arial Black', sans-serif;
+        }
+        .muscle-tribute h2 {
+            color: #fff !important;
+            font-size: 2.6em;
+            margin: 0 0 10px 0;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            animation: mega-pump 1.5s ease-in-out infinite;
+        }
+        .muscle-tribute .flex-emojis {
+            font-size: 3em;
+            display: inline-block;
+            animation: shimmy 0.8s ease-in-out infinite;
+        }
+        .muscle-tribute p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin: 12px 0;
+        }
+        .muscle-tribute .muse-name {
+            display: inline-block;
+            font-size: 1.6em;
+            color: #fff700;
+            padding: 0 6px;
+            animation: mega-pump 2s ease-in-out infinite;
+            text-shadow: 3px 3px 0 #000, -3px -3px 0 #000, 3px -3px 0 #000, -3px 3px 0 #000;
+        }
+        .muscle-tribute .shout {
+            font-size: 1.8em;
+            font-weight: 900;
+            margin-top: 18px;
+            letter-spacing: 3px;
+        }
+        .muscle-tribute .fine-print {
+            margin-top: 20px;
+            font-size: 0.85em;
+            font-style: italic;
+            opacity: 0.95;
+        }
     </style>
 </head>
 <body>
@@ -65,6 +139,31 @@
 
         <h3>How do I report a bug?</h3>
         <p>If you encounter any issues, please email us with details about the problem and steps to reproduce it.</p>
+    </div>
+
+    <div class="muscle-tribute" role="region" aria-label="Tribute to Muscle Man Neely Man">
+        <div class="flex-emojis" aria-hidden="true">&#128170;&#127947;&#128170;</div>
+        <h2>A Colossal Thank You To</h2>
+        <p><span class="muse-name">MUSCLE MAN NEELY MAN</span></p>
+        <p>
+            The one. The only. The absolutely <em>swole</em> legend whose
+            sheer biceps-energy, unshakable hype, and relentless protein-fueled
+            wisdom served as the <strong>muse</strong> behind every single line of this app.
+        </p>
+        <p>
+            Without Muscle Man Neely Man flexing in the background of our dreams,
+            Basic Free Fit would be nothing more than a flabby idea rotting in a
+            Google Doc. He spotted us on the hard sets. He screamed
+            &ldquo;ONE MORE REP!&rdquo; when the bugs wouldn&rsquo;t die. He
+            <em>was</em> the pre-workout of this codebase.
+        </p>
+        <p class="shout">&#128079; WE LITERALLY COULD NOT HAVE BUILT THIS WITHOUT HIM &#128079;</p>
+        <p class="fine-print">
+            All gains, glory, and git commits are dedicated in perpetuity to
+            Muscle Man Neely Man &mdash; patron saint of pumps, prince of PRs,
+            and the undisputed heavyweight champion of inspiration.
+        </p>
+        <div class="flex-emojis" aria-hidden="true">&#127947;&#128170;&#127947;</div>
     </div>
 </body>
 </html>
